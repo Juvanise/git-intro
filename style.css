@@ -1,4 +1,3 @@
-Css2
 *{
     margin: 0px;
     padding: 0px;
@@ -9,7 +8,9 @@ body{
 }
 header{
     background-color: aquamarine;
+    min-height: 10vh;
 }
+
 .titulo-principal{
     display: block;
     font-weight: bold;
@@ -28,24 +29,83 @@ header{
     width: 100%;
     height: 300px;
 }
-header nav {
-    width: 50vh;
-    font-size: 30px;
-    display: inline;
+.caja{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
 }
+nav {
     
-nav{
-    width: 300px;
-    margin-left: 10px;
+    font-size: 20px;
+    /*background-color: rgb(171, 194, 171);*/
+    margin-left: 5px;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: end;
+   
 }
 nav a{
+    width: 20vh;
+    height: 50px;
     border: 3px solid slategray;
     text-decoration: none;
     color: darkgreen;
     padding: 5px;
+    border-radius: 5px;
+    text-align: center;
     
+}
+.subtitulo{
+    text-align: center;
+    border: 2px solid green;
+    background-color: black;
+    color: aliceblue;
+}
+.titulo-lista{
+    text-align: center;
+    margin-top: 15px;
+}
 
+main{
+    background-color: bisque;
+    min-height: 70vh;
+} 
+main li{
+    width: 70%;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-top: 5px;
+    align-items: center;
+    
+}
+.alfabeto{
+    
+        list-style-type: lower-alpha;
+      
+}
+main table{
+    background-color: burlywood;
+    border: 3px solid black;
+    width: 90%;
 
 }
+
+td,th{
+    font-size: 20px;
+    padding: 10px;
+} 
+tbody td {
+    text-align: center;
+    
+}
+    
+
+footer{
+    min-height: 5vh;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+
 
     
