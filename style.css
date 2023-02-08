@@ -7,11 +7,13 @@
 body{
     background-color: bisque;
     padding: 1rem;
+   
     
 }
 header{
     background-color: aquamarine;
     min-height: 10vh;
+    border-radius: 20px;
 }
 
 .titulo-principal{
@@ -25,8 +27,8 @@ header{
     border: 2px solid burlywood;
     border-radius: 20px;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
 }
 .banner{
     width: 100%;
@@ -36,43 +38,52 @@ header{
     width: 100%;
     position: relative;
     margin: 0 auto;
+    
 }
 nav {
     
     font-size: 20px;
-    /*background-color: rgb(171, 194, 171);*/
     margin-left: 5px;
     display: flex;
-    /*flex-wrap: wrap;*/
     justify-content: end;
    
 }
 nav a{
     width: 20vh;
-    height: 50px;
+    height: 60px;
     border: 3px solid slategray;
     text-decoration: none;
     color: darkgreen;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 1rem;
     text-align: center;
     
 }
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+    
+
+main{
+    width: 940px;
+    margin: 0 auto;
+    background-color: bisque;
+    min-height: 70vh;
+} 
 .subtitulo{
+    width: 100%;
     text-align: center;
     border: 2px solid green;
-    background-color: black;
-    color: aliceblue;
+    background-color: #BBBBBB;
+    color: whitesmoke;
 }
 .titulo-lista{
     text-align: center;
     margin-top: 15px;
 }
 
-main{
-    background-color: bisque;
-    min-height: 70vh;
-} 
+
 main li{
     width: 70%;
     font-weight: bold;
@@ -108,7 +119,51 @@ footer{
     margin-top: 10px;
     font-weight: bolder;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 2px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+fieldset{
+    padding: 0.5rem;
+    border: none;
+}
 
-
-
+iframe{
+    border-radius: 1rem;
+    margin: 1rem;
+    border: 2px solid black ;
+}
+.mapa{
     
+    display: flex;
+    flex-wrap:wrap;
+}
+.mapa1,
+.mapa2,
+.mapa3,
+.mapa4{
+    height: 25rem;
+    width: 25rem;
+    object-fit: contain;
+}
+
+.formulario{
+    margin-top: 30px;
+}
+.submit{
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.submit:hover {
+    color: #C78C19;
+    
+    
+}
